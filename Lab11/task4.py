@@ -24,7 +24,6 @@ def validate_password(password: str) -> bool:
     ]
     return all(rule(password) for rule in rules)
 
-# Приклади використання
 print(validate_password("StrongPass1!"))  # True
 print(validate_password("weakpass"))      # False
 print(validate_password("Short7!"))       # False
